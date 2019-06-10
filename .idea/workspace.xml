@@ -11,49 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94bb4257-b785-440d-af24-14c62ca56b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DummyNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DummyNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxMobilityMigrateMetric.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MaxMobilityMigrateMetric.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaxMobilityMigrateMetric.h" beforeDir="false" afterPath="$PROJECT_DIR$/MaxMobilityMigrateMetric.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MigrateMetric.h" beforeDir="false" afterPath="$PROJECT_DIR$/MigrateMetric.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinBESTMigrateMetric.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MinBESTMigrateMetric.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinBESTMigratePolicy.h" beforeDir="false" afterPath="$PROJECT_DIR$/MinBESTMigratePolicy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinEstMigrateMetric.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MinEstMigrateMetric.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinEstMigrateMetric.h" beforeDir="false" afterPath="$PROJECT_DIR$/MinEstMigrateMetric.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mec.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/mec.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mec.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/common.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dagger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/dag.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dagger.h" beforeDir="false" afterPath="$PROJECT_DIR$/dag.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/greedy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy1.h" beforeDir="false" afterPath="$PROJECT_DIR$/greedy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myalgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myalgorithm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myalgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/myalgorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduler.h" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solution.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system.h" beforeDir="false" afterPath="$PROJECT_DIR$/system.h" afterDir="false" />
-    </list>
+    <list default="true" id="94bb4257-b785-440d-af24-14c62ca56b12" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,22 +32,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MaxMobilityMigrateMetric.cpp">
+        <entry file="file://$PROJECT_DIR$/dag.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+            <state relative-caret-position="170">
+              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+              <folding>
+                <element signature="e#36#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dag.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scheduler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-              <folding>
-                <element signature="e#36#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -130,13 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scheduler.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#39#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myalgorithm.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+              <folding>
+                <element signature="e#38#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,15 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MinBESTMigrateMetric.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -196,7 +157,6 @@
         <option value="$PROJECT_DIR$/solution.h" />
         <option value="$PROJECT_DIR$/greedy1.h" />
         <option value="$PROJECT_DIR$/greedy1.cpp" />
-        <option value="$PROJECT_DIR$/scheduler.h" />
         <option value="$PROJECT_DIR$/dummy_node.h" />
         <option value="$PROJECT_DIR$/dummy_node.cpp" />
         <option value="$PROJECT_DIR$/system.h" />
@@ -208,21 +168,22 @@
         <option value="$PROJECT_DIR$/MinEstMigrateMetric.h" />
         <option value="$PROJECT_DIR$/MaxMobilityMigrateMetric.h" />
         <option value="$PROJECT_DIR$/MinBESTMigratePolicy.h" />
-        <option value="$PROJECT_DIR$/myalgorithm.cpp" />
         <option value="$PROJECT_DIR$/MigrateMetric.h" />
         <option value="$PROJECT_DIR$/MinEstMigrateMetric.cpp" />
         <option value="$PROJECT_DIR$/MaxMobilityMigrateMetric.cpp" />
         <option value="$PROJECT_DIR$/MinBESTMigrateMetric.cpp" />
         <option value="$PROJECT_DIR$/common.cpp" />
         <option value="$PROJECT_DIR$/common.h" />
-        <option value="$PROJECT_DIR$/dag.cpp" />
         <option value="$PROJECT_DIR$/system.cpp" />
         <option value="$PROJECT_DIR$/scheduler.cpp" />
+        <option value="$PROJECT_DIR$/dag.cpp" />
+        <option value="$PROJECT_DIR$/myalgorithm.cpp" />
+        <option value="$PROJECT_DIR$/scheduler.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -300,12 +261,20 @@
       <workItem from="1557838330163" duration="4689000" />
       <workItem from="1558334864350" duration="83000" />
       <workItem from="1560084987278" duration="5322000" />
-      <workItem from="1560142539026" duration="13222000" />
+      <workItem from="1560142539026" duration="13489000" />
     </task>
+    <task id="LOCAL-00001" summary="bug fixes">
+      <created>1560165403524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560165403524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38998000" />
+    <option name="totallyTimeSpent" value="39265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -335,6 +304,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -409,13 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scheduler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/greedy.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -466,16 +432,6 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#90#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myalgorithm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding>
-            <element signature="e#38#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -570,16 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dag.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#36#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -597,6 +543,33 @@
           <folding>
             <element signature="e#39#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dag.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+          <folding>
+            <element signature="e#36#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myalgorithm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+          <folding>
+            <element signature="e#38#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
