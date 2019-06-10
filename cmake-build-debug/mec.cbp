@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mec"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Administrator/Desktop/mec/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mec">
+				<Option output="C:/Users/Administrator/Desktop/mec/cmake-build-debug/mec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator/Desktop/mec/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mec/fast">
+				<Option output="C:/Users/Administrator/Desktop/mec/cmake-build-debug/mec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator/Desktop/mec/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Administrator/Desktop/mec/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Administrator/Desktop/mec/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/mec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/DefaultMigrateMetric.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/DefaultNodeSelection.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/DummyNode.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/DummyNode.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MaxMobilityMigrateMetric.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MaxMobilityMigrateMetric.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MigrateMetric.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MinBESTMigrateMetric.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MinBESTMigratePolicy.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MinEstMigrateMetric.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/MinEstMigrateMetric.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/NodeSelectionPolicy.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/RandomNodeSelection.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/common.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dagger.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dagger.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy1.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy1.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/main.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/myalgorithm.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/myalgorithm.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/node.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/node.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/processor.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/processor.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/scheduler.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/scheduler.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/solution.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/solution.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/system.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/system.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
