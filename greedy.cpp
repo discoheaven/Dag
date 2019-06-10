@@ -75,13 +75,12 @@ void Greedy::run_with_sched(const Dag &dag, const System &sys, Scheduler &schedu
                 bfs.push(sitem);
         }
     }
-
-    Solution solution(scheduler);
-    solution.print();
-    solution.print_solution();
 }
 void Greedy::run(const Dag &dag, const System &sys, int rank)
 {
     auto scheduler = Scheduler(dag, sys);
     run_with_sched(dag, sys, scheduler, rank);
+    Solution solution(scheduler);
+    solution.print();
+    solution.print_solution();
 }
