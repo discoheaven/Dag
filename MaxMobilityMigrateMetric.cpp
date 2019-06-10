@@ -6,7 +6,7 @@ void MaxMobilityMigrateMetric::initial(const shared_ptr<Node> &node)
 {
     max_mobility = node->get_lst() - node->get_est();
 }
-bool MaxMobilityMigrateMetric::better(const shared_ptr<Node> &node, const scheduler &sched)
+bool MaxMobilityMigrateMetric::better(const shared_ptr<Node> &node, const Scheduler &sched)
 {
     if(node->get_lst() - node->get_est() > max_mobility)
     {

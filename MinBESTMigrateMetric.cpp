@@ -8,7 +8,7 @@ void MinBESTMigrateMetric::initial(const shared_ptr<Node> &node)
     for(auto &item : node->get_children())
         min_best += item.lock()->get_est();
 }
-bool MinBESTMigrateMetric::better(const shared_ptr<Node> &node, const scheduler &sched)
+bool MinBESTMigrateMetric::better(const shared_ptr<Node> &node, const Scheduler &sched)
 {
     auto best = node->get_est();
     for(auto &item : node->get_children())

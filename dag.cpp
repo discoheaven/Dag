@@ -5,10 +5,11 @@
 #include <memory>
 #include <random>
 #include <set>
-#include <assert.h>
-#include <time.h>
-#include "dagger.h"
-#include "DummyNode.h"
+#include <cassert>
+#include <ctime>
+#include "dag.h"
+#include "dummy_node.h"
+#include "common.h"
 using std::vector;
 using std::shared_ptr;
 using std::default_random_engine;
@@ -16,7 +17,8 @@ using std::uniform_int_distribution;
 using std::uniform_real_distribution;
 using std::set;
 using std::pair;
-Dagger::Dagger(Dagger::Dag_Selector s) : selector(s)
+
+Dag::Dag(Dag::Dag_Selector s) : selector(s)
 {
     switch(selector){
         case DAG1:
@@ -38,7 +40,7 @@ Dagger::Dagger(Dagger::Dag_Selector s) : selector(s)
 }
 
 
-void Dagger::dag1_generator()
+void Dag::dag1_generator()
 {
     default_random_engine e;
     uniform_int_distribution<unsigned> u(1,100);
@@ -59,7 +61,7 @@ void Dagger::dag1_generator()
     nodes[4]->InsertFather(nodes[2]);
 }
 
-void Dagger::dag2_generator()
+void Dag::dag2_generator()
 {
     default_random_engine e;
     uniform_int_distribution<unsigned> u(1,100);
@@ -83,20 +85,22 @@ void Dagger::dag2_generator()
     nodes[5]->InsertFather(nodes[2]);
 }
 
-void Dagger::random_dag_generator()
+void Dag::random_dag_generator()
 {
+    static int nodes_sz = nodes_size;
+
     int id = 0;
 
     nodes.emplace_back(new DummyNode(id++,0));
 
-    default_random_engine e(time(nullptr));
+    default_random_engine e;
     uniform_int_distribution<unsigned> u(1,100);
     uniform_int_distribution<unsigned> ue(1,10);
 
     vector<shared_ptr<Node>> first_layer_nodes;
     vector<shared_ptr<Node>> last_layer_nodes;
 
-    int inital_layer_nodes_size = static_cast<int>(sqrt(random_nodes_size));
+    auto inital_layer_nodes_size = static_cast<int>(sqrt(nodes_sz));
 
     for(int i = 0;i <inital_layer_nodes_size;++i)
     {
@@ -105,7 +109,7 @@ void Dagger::random_dag_generator()
         first_layer_nodes.push_back(node);
     }
 
-    int remain = random_nodes_size - inital_layer_nodes_size;
+    int remain = nodes_sz - inital_layer_nodes_size;
     int last_layer_index = 1;
     int last_layer_size = inital_layer_nodes_size;
     int cur_layer_size = 0;
@@ -207,7 +211,7 @@ void helper_child(const shared_ptr<Node>& node,const shared_ptr<Node>& cur_node,
     }
 }
 
-void Dagger::set_all_children_fathers()
+void Dag::set_all_children_fathers()
 {
     set<shared_ptr<Node>> st;
     for(auto &item : nodes)
@@ -223,7 +227,7 @@ void Dagger::set_all_children_fathers()
     }
 }
 
-void Dagger::print_dag() const
+void Dag::print_dag() const
 {
     for(auto &item : nodes)
     {

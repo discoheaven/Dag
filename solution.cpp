@@ -2,7 +2,7 @@
 // Created by komine on 2019/3/13.
 //
 #include "solution.h"
-#include "DummyNode.h"
+#include "dummy_node.h"
 Solution::Solution(const Scheduler& sc)
 {
     for(auto &item : sc.get_nodes())

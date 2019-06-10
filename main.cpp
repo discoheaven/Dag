@@ -1,11 +1,13 @@
+#include "dag.h"
+#include "system.h"
 #include "myalgorithm.h"
-#include "greedy1.h"
+#include "greedy.h"
 using std::cout;
 using std::endl;
 
 int main() {
-    my_algo algo(5);
-    algo.run();
-    //greedy1 greedy(5);
-    //greedy.run();
+    Dag dag = Dag();
+    System sys = System();
+    MyAlgo algo = MyAlgo();
+    algo.run(dag, sys);
 }

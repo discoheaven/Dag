@@ -22,15 +22,12 @@ public:
     shared_ptr<Processor> get_dag_initial_processor() const{
         return dag_initial_processor_;
     }
-    static const int user_freq = 10000;
-    static const int mec_freq = 20000;
-    static const int cloud_freq = 50000;
-    static const int user_num = 20;
-    static const int mec_num = 1;
-    static const int cloud_num = 1;
 private:
     default_random_engine e_;
     shared_ptr<Processor> dag_initial_processor_;
     vector<shared_ptr<Processor>> processors_;
+    static const int user_freq = 10000;
+    static const int mec_freq = 20000;
+    static const int cloud_freq = 50000;
 };
 #endif //MEC_SYSTEM_H

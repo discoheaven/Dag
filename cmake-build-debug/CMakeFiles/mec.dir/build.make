@@ -121,18 +121,18 @@ CMakeFiles/mec.dir/system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/system.cpp.s"
 	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\system.cpp -o CMakeFiles\mec.dir\system.cpp.s
 
-CMakeFiles/mec.dir/dagger.cpp.obj: CMakeFiles/mec.dir/flags.make
-CMakeFiles/mec.dir/dagger.cpp.obj: ../dagger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mec.dir/dagger.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\dagger.cpp.obj -c C:\Users\Administrator\Desktop\mec\dagger.cpp
+CMakeFiles/mec.dir/dag.cpp.obj: CMakeFiles/mec.dir/flags.make
+CMakeFiles/mec.dir/dag.cpp.obj: ../dag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mec.dir/dag.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\dag.cpp.obj -c C:\Users\Administrator\Desktop\mec\dag.cpp
 
-CMakeFiles/mec.dir/dagger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/dagger.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\dagger.cpp > CMakeFiles\mec.dir\dagger.cpp.i
+CMakeFiles/mec.dir/dag.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/dag.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\dag.cpp > CMakeFiles\mec.dir\dag.cpp.i
 
-CMakeFiles/mec.dir/dagger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/dagger.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\dagger.cpp -o CMakeFiles\mec.dir\dagger.cpp.s
+CMakeFiles/mec.dir/dag.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/dag.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\dag.cpp -o CMakeFiles\mec.dir\dag.cpp.s
 
 CMakeFiles/mec.dir/scheduler.cpp.obj: CMakeFiles/mec.dir/flags.make
 CMakeFiles/mec.dir/scheduler.cpp.obj: ../scheduler.cpp
@@ -160,31 +160,31 @@ CMakeFiles/mec.dir/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/node.cpp.s"
 	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\node.cpp -o CMakeFiles\mec.dir\node.cpp.s
 
-CMakeFiles/mec.dir/greedy1.cpp.obj: CMakeFiles/mec.dir/flags.make
-CMakeFiles/mec.dir/greedy1.cpp.obj: ../greedy1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mec.dir/greedy1.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\greedy1.cpp.obj -c C:\Users\Administrator\Desktop\mec\greedy1.cpp
+CMakeFiles/mec.dir/greedy.cpp.obj: CMakeFiles/mec.dir/flags.make
+CMakeFiles/mec.dir/greedy.cpp.obj: ../greedy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mec.dir/greedy.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\greedy.cpp.obj -c C:\Users\Administrator\Desktop\mec\greedy.cpp
 
-CMakeFiles/mec.dir/greedy1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/greedy1.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\greedy1.cpp > CMakeFiles\mec.dir\greedy1.cpp.i
+CMakeFiles/mec.dir/greedy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/greedy.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\greedy.cpp > CMakeFiles\mec.dir\greedy.cpp.i
 
-CMakeFiles/mec.dir/greedy1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/greedy1.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\greedy1.cpp -o CMakeFiles\mec.dir\greedy1.cpp.s
+CMakeFiles/mec.dir/greedy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/greedy.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\greedy.cpp -o CMakeFiles\mec.dir\greedy.cpp.s
 
-CMakeFiles/mec.dir/DummyNode.cpp.obj: CMakeFiles/mec.dir/flags.make
-CMakeFiles/mec.dir/DummyNode.cpp.obj: ../DummyNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mec.dir/DummyNode.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\DummyNode.cpp.obj -c C:\Users\Administrator\Desktop\mec\DummyNode.cpp
+CMakeFiles/mec.dir/dummy_node.cpp.obj: CMakeFiles/mec.dir/flags.make
+CMakeFiles/mec.dir/dummy_node.cpp.obj: ../dummy_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mec.dir/dummy_node.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\dummy_node.cpp.obj -c C:\Users\Administrator\Desktop\mec\dummy_node.cpp
 
-CMakeFiles/mec.dir/DummyNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/DummyNode.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\DummyNode.cpp > CMakeFiles\mec.dir\DummyNode.cpp.i
+CMakeFiles/mec.dir/dummy_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/dummy_node.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\dummy_node.cpp > CMakeFiles\mec.dir\dummy_node.cpp.i
 
-CMakeFiles/mec.dir/DummyNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/DummyNode.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\DummyNode.cpp -o CMakeFiles\mec.dir\DummyNode.cpp.s
+CMakeFiles/mec.dir/dummy_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/dummy_node.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\dummy_node.cpp -o CMakeFiles\mec.dir\dummy_node.cpp.s
 
 CMakeFiles/mec.dir/MinEstMigrateMetric.cpp.obj: CMakeFiles/mec.dir/flags.make
 CMakeFiles/mec.dir/MinEstMigrateMetric.cpp.obj: ../MinEstMigrateMetric.cpp
@@ -225,6 +225,19 @@ CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.s"
 	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\MinBESTMigrateMetric.cpp -o CMakeFiles\mec.dir\MinBESTMigrateMetric.cpp.s
 
+CMakeFiles/mec.dir/common.cpp.obj: CMakeFiles/mec.dir/flags.make
+CMakeFiles/mec.dir/common.cpp.obj: ../common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mec.dir/common.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mec.dir\common.cpp.obj -c C:\Users\Administrator\Desktop\mec\common.cpp
+
+CMakeFiles/mec.dir/common.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mec.dir/common.cpp.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Administrator\Desktop\mec\common.cpp > CMakeFiles\mec.dir\common.cpp.i
+
+CMakeFiles/mec.dir/common.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mec.dir/common.cpp.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Administrator\Desktop\mec\common.cpp -o CMakeFiles\mec.dir\common.cpp.s
+
 # Object files for target mec
 mec_OBJECTS = \
 "CMakeFiles/mec.dir/main.cpp.obj" \
@@ -232,14 +245,15 @@ mec_OBJECTS = \
 "CMakeFiles/mec.dir/processor.cpp.obj" \
 "CMakeFiles/mec.dir/solution.cpp.obj" \
 "CMakeFiles/mec.dir/system.cpp.obj" \
-"CMakeFiles/mec.dir/dagger.cpp.obj" \
+"CMakeFiles/mec.dir/dag.cpp.obj" \
 "CMakeFiles/mec.dir/scheduler.cpp.obj" \
 "CMakeFiles/mec.dir/node.cpp.obj" \
-"CMakeFiles/mec.dir/greedy1.cpp.obj" \
-"CMakeFiles/mec.dir/DummyNode.cpp.obj" \
+"CMakeFiles/mec.dir/greedy.cpp.obj" \
+"CMakeFiles/mec.dir/dummy_node.cpp.obj" \
 "CMakeFiles/mec.dir/MinEstMigrateMetric.cpp.obj" \
 "CMakeFiles/mec.dir/MaxMobilityMigrateMetric.cpp.obj" \
-"CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.obj"
+"CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.obj" \
+"CMakeFiles/mec.dir/common.cpp.obj"
 
 # External object files for target mec
 mec_EXTERNAL_OBJECTS =
@@ -249,19 +263,20 @@ mec.exe: CMakeFiles/mec.dir/myalgorithm.cpp.obj
 mec.exe: CMakeFiles/mec.dir/processor.cpp.obj
 mec.exe: CMakeFiles/mec.dir/solution.cpp.obj
 mec.exe: CMakeFiles/mec.dir/system.cpp.obj
-mec.exe: CMakeFiles/mec.dir/dagger.cpp.obj
+mec.exe: CMakeFiles/mec.dir/dag.cpp.obj
 mec.exe: CMakeFiles/mec.dir/scheduler.cpp.obj
 mec.exe: CMakeFiles/mec.dir/node.cpp.obj
-mec.exe: CMakeFiles/mec.dir/greedy1.cpp.obj
-mec.exe: CMakeFiles/mec.dir/DummyNode.cpp.obj
+mec.exe: CMakeFiles/mec.dir/greedy.cpp.obj
+mec.exe: CMakeFiles/mec.dir/dummy_node.cpp.obj
 mec.exe: CMakeFiles/mec.dir/MinEstMigrateMetric.cpp.obj
 mec.exe: CMakeFiles/mec.dir/MaxMobilityMigrateMetric.cpp.obj
 mec.exe: CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.obj
+mec.exe: CMakeFiles/mec.dir/common.cpp.obj
 mec.exe: CMakeFiles/mec.dir/build.make
 mec.exe: CMakeFiles/mec.dir/linklibs.rsp
 mec.exe: CMakeFiles/mec.dir/objects1.rsp
 mec.exe: CMakeFiles/mec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable mec.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\Desktop\mec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable mec.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\mec.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

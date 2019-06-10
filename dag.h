@@ -15,7 +15,7 @@ using std::cout;
 using std::endl;
 using std::map;
 using std::pair;
-class Dagger {
+class Dag {
 public:
     enum Dag_Selector
     {
@@ -27,7 +27,7 @@ public:
         DAG6,
         RANDOM_DAG
     };
-    Dagger(Dag_Selector s);
+    explicit Dag(Dag_Selector s = RANDOM_DAG);
     vector<shared_ptr<Node>> get_nodes() const{
         return nodes;
     }
@@ -47,6 +47,5 @@ private:
     Dag_Selector selector;
     vector<shared_ptr<Node>> nodes;
     map<pair<int,int>,double> edges;
-    static const int random_nodes_size = 100;
 };
 #endif //MEC_DAGGER_H

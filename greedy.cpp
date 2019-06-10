@@ -2,11 +2,11 @@
 // Created by lwd on 19-4-8.
 //
 #include <queue>
-#include "greedy1.h"
+#include "greedy.h"
 using std::queue;
 using std::multimap;
 
-void Greedy::initialize(const Dagger &dag, const System &sys, Scheduler& scheduler)
+void Greedy::initialize(const Dag &dag, const System &sys, Scheduler& scheduler)
 {
     auto initial_processor = sys.get_dag_initial_processor();
     auto nodes = dag.get_nodes();
@@ -40,7 +40,8 @@ void Greedy::assign(const shared_ptr<Node> &node, const vector<shared_ptr<Node>>
     scheduler.set_schedule_at(node,min_processor,min_index);
 }
 
-void Greedy::run(const Dagger &dag, const System &sys, Scheduler& scheduler, int rank)
+
+void Greedy::run_with_sched(const Dag &dag, const System &sys, Scheduler &scheduler, int rank)
 {
     initialize(dag, sys, scheduler);
 
@@ -78,4 +79,9 @@ void Greedy::run(const Dagger &dag, const System &sys, Scheduler& scheduler, int
     Solution solution(scheduler);
     solution.print();
     solution.print_solution();
+}
+void Greedy::run(const Dag &dag, const System &sys, int rank)
+{
+    auto scheduler = Scheduler(dag, sys);
+    run_with_sched(dag, sys, scheduler, rank);
 }

@@ -4,11 +4,11 @@
 
 #ifndef MEC_SCHEDULER_H
 #define MEC_SCHEDULER_H
-#include "dagger.h"
+#include "dag.h"
 #include "system.h"
 class Scheduler {
 public:
-    Scheduler(Dagger dag, System sy): nodes(dag.get_nodes()),edges(dag.get_edges()),processors(sy.get_processors())
+    Scheduler(const Dag& dag, const System& sy): nodes(dag.get_nodes()),edges(dag.get_edges()),processors(sy.get_processors())
     {
     }
     void set_schedule(const shared_ptr<Node> &node,const shared_ptr<Processor> &processor);

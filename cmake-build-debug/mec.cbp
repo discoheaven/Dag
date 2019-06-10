@@ -86,12 +86,6 @@
 		<Unit filename="C:/Users/Administrator/Desktop/mec/DefaultNodeSelection.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/DummyNode.cpp">
-			<Option target="mec"/>
-		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/DummyNode.h">
-			<Option target="mec"/>
-		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/mec/MaxMobilityMigrateMetric.cpp">
 			<Option target="mec"/>
 		</Unit>
@@ -119,19 +113,28 @@
 		<Unit filename="C:/Users/Administrator/Desktop/mec/RandomNodeSelection.h">
 			<Option target="mec"/>
 		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/common.cpp">
+			<Option target="mec"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/mec/common.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/dagger.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dag.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/dagger.h">
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dag.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy1.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dummy_node.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy1.h">
+		<Unit filename="C:/Users/Administrator/Desktop/mec/dummy_node.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy.cpp">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/Desktop/mec/greedy.h">
 			<Option target="mec"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/Desktop/mec/main.cpp">

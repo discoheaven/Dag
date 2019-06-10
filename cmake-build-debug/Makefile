@@ -122,33 +122,6 @@ mec/fast:
 	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/build
 .PHONY : mec/fast
 
-DummyNode.obj: DummyNode.cpp.obj
-
-.PHONY : DummyNode.obj
-
-# target to build an object file
-DummyNode.cpp.obj:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/DummyNode.cpp.obj
-.PHONY : DummyNode.cpp.obj
-
-DummyNode.i: DummyNode.cpp.i
-
-.PHONY : DummyNode.i
-
-# target to preprocess a source file
-DummyNode.cpp.i:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/DummyNode.cpp.i
-.PHONY : DummyNode.cpp.i
-
-DummyNode.s: DummyNode.cpp.s
-
-.PHONY : DummyNode.s
-
-# target to generate assembly for a file
-DummyNode.cpp.s:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/DummyNode.cpp.s
-.PHONY : DummyNode.cpp.s
-
 MaxMobilityMigrateMetric.obj: MaxMobilityMigrateMetric.cpp.obj
 
 .PHONY : MaxMobilityMigrateMetric.obj
@@ -230,59 +203,113 @@ MinEstMigrateMetric.cpp.s:
 	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/MinEstMigrateMetric.cpp.s
 .PHONY : MinEstMigrateMetric.cpp.s
 
-dagger.obj: dagger.cpp.obj
+common.obj: common.cpp.obj
 
-.PHONY : dagger.obj
-
-# target to build an object file
-dagger.cpp.obj:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dagger.cpp.obj
-.PHONY : dagger.cpp.obj
-
-dagger.i: dagger.cpp.i
-
-.PHONY : dagger.i
-
-# target to preprocess a source file
-dagger.cpp.i:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dagger.cpp.i
-.PHONY : dagger.cpp.i
-
-dagger.s: dagger.cpp.s
-
-.PHONY : dagger.s
-
-# target to generate assembly for a file
-dagger.cpp.s:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dagger.cpp.s
-.PHONY : dagger.cpp.s
-
-greedy1.obj: greedy1.cpp.obj
-
-.PHONY : greedy1.obj
+.PHONY : common.obj
 
 # target to build an object file
-greedy1.cpp.obj:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy1.cpp.obj
-.PHONY : greedy1.cpp.obj
+common.cpp.obj:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/common.cpp.obj
+.PHONY : common.cpp.obj
 
-greedy1.i: greedy1.cpp.i
+common.i: common.cpp.i
 
-.PHONY : greedy1.i
+.PHONY : common.i
 
 # target to preprocess a source file
-greedy1.cpp.i:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy1.cpp.i
-.PHONY : greedy1.cpp.i
+common.cpp.i:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/common.cpp.i
+.PHONY : common.cpp.i
 
-greedy1.s: greedy1.cpp.s
+common.s: common.cpp.s
 
-.PHONY : greedy1.s
+.PHONY : common.s
 
 # target to generate assembly for a file
-greedy1.cpp.s:
-	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy1.cpp.s
-.PHONY : greedy1.cpp.s
+common.cpp.s:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/common.cpp.s
+.PHONY : common.cpp.s
+
+dag.obj: dag.cpp.obj
+
+.PHONY : dag.obj
+
+# target to build an object file
+dag.cpp.obj:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dag.cpp.obj
+.PHONY : dag.cpp.obj
+
+dag.i: dag.cpp.i
+
+.PHONY : dag.i
+
+# target to preprocess a source file
+dag.cpp.i:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dag.cpp.i
+.PHONY : dag.cpp.i
+
+dag.s: dag.cpp.s
+
+.PHONY : dag.s
+
+# target to generate assembly for a file
+dag.cpp.s:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dag.cpp.s
+.PHONY : dag.cpp.s
+
+dummy_node.obj: dummy_node.cpp.obj
+
+.PHONY : dummy_node.obj
+
+# target to build an object file
+dummy_node.cpp.obj:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dummy_node.cpp.obj
+.PHONY : dummy_node.cpp.obj
+
+dummy_node.i: dummy_node.cpp.i
+
+.PHONY : dummy_node.i
+
+# target to preprocess a source file
+dummy_node.cpp.i:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dummy_node.cpp.i
+.PHONY : dummy_node.cpp.i
+
+dummy_node.s: dummy_node.cpp.s
+
+.PHONY : dummy_node.s
+
+# target to generate assembly for a file
+dummy_node.cpp.s:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/dummy_node.cpp.s
+.PHONY : dummy_node.cpp.s
+
+greedy.obj: greedy.cpp.obj
+
+.PHONY : greedy.obj
+
+# target to build an object file
+greedy.cpp.obj:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy.cpp.obj
+.PHONY : greedy.cpp.obj
+
+greedy.i: greedy.cpp.i
+
+.PHONY : greedy.i
+
+# target to preprocess a source file
+greedy.cpp.i:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy.cpp.i
+.PHONY : greedy.cpp.i
+
+greedy.s: greedy.cpp.s
+
+.PHONY : greedy.s
+
+# target to generate assembly for a file
+greedy.cpp.s:
+	$(MAKE) -f CMakeFiles\mec.dir\build.make CMakeFiles/mec.dir/greedy.cpp.s
+.PHONY : greedy.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -482,9 +509,6 @@ help:
 	@echo ... mec
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... DummyNode.obj
-	@echo ... DummyNode.i
-	@echo ... DummyNode.s
 	@echo ... MaxMobilityMigrateMetric.obj
 	@echo ... MaxMobilityMigrateMetric.i
 	@echo ... MaxMobilityMigrateMetric.s
@@ -494,12 +518,18 @@ help:
 	@echo ... MinEstMigrateMetric.obj
 	@echo ... MinEstMigrateMetric.i
 	@echo ... MinEstMigrateMetric.s
-	@echo ... dagger.obj
-	@echo ... dagger.i
-	@echo ... dagger.s
-	@echo ... greedy1.obj
-	@echo ... greedy1.i
-	@echo ... greedy1.s
+	@echo ... common.obj
+	@echo ... common.i
+	@echo ... common.s
+	@echo ... dag.obj
+	@echo ... dag.i
+	@echo ... dag.s
+	@echo ... dummy_node.obj
+	@echo ... dummy_node.i
+	@echo ... dummy_node.s
+	@echo ... greedy.obj
+	@echo ... greedy.i
+	@echo ... greedy.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

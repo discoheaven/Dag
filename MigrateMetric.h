@@ -12,7 +12,7 @@ class MigrateMetric
 {
 public:
     virtual void initial(const shared_ptr<Node>& node) = 0;
-    virtual bool better(const shared_ptr<Node>& node,const scheduler& sched) = 0;
+    virtual bool better(const shared_ptr<Node>& node, const Scheduler& scheduler) = 0;
     virtual ~MigrateMetric() = default;
 };
 #endif //MEC_MIGRATEMETRIC_H

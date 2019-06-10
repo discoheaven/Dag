@@ -8,7 +8,7 @@
 class MinBESTMigrateMetric : public MigrateMetric{
 public:
     void initial(const shared_ptr<Node>& node) override;
-    bool better(const shared_ptr<Node>& node,const scheduler& sched) override;
+    bool better(const shared_ptr<Node>& node,const Scheduler& sched) override;
 private:
     double min_best;
 };

@@ -5,8 +5,6 @@
 #include "common.h"
 #include "scheduler.h"
 using std::queue;
-extern double CCR;
-extern double deadline;
 
 double Scheduler::calc_est_processors(const shared_ptr<Node> &node)
 {
