@@ -26,7 +26,7 @@ public:
         return processors;
     }
 private:
-    double get_comm_rate(const shared_ptr<Node> &node1,const shared_ptr<Node> &node2) const;
+    double get_comm_time(double transload, const shared_ptr<Node> &node1,const shared_ptr<Node> &node2) const;
     double get_comm_rate(const shared_ptr<Processor> &node1,const shared_ptr<Processor> &node2) const;
     double calc_est_parents(const shared_ptr<Node> &node);
     double calc_est_processors(const shared_ptr<Node> &node);

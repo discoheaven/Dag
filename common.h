@@ -9,4 +9,5 @@ extern int processors_size;
 extern double CCR;
 extern double deadline;
 extern int frac_user_mec;
+extern double cloud_delay;
 #endif //MEC_COMMON_H

@@ -17,11 +17,17 @@ double Scheduler::calc_est_processors(const shared_ptr<Node> &node)
     return prev_task_est + prev_task_exec_time;
 }
 
-double Scheduler::get_comm_rate(const shared_ptr<Node> &node1, const shared_ptr<Node> &node2)  const
+double Scheduler::get_comm_time(double transload, const shared_ptr<Node> &node1, const shared_ptr<Node> &node2)  const
 {
     auto processor1 = node1->get_processor();
     auto processor2 = node2->get_processor();
-    return get_comm_rate(processor1,processor2);
+    auto rate = get_comm_rate(processor1,processor2);
+    if(rate == 0)
+        return 0;
+    double time = 0;
+    if(processor1->get_type() == Processor::ClOUD || processor2->get_type() == Processor::ClOUD)
+        time = cloud_delay;
+    return time + transload / rate;
 }
 
 double Scheduler::get_comm_rate(const shared_ptr<Processor> &processor1, const shared_ptr<Processor> &processor2)  const
@@ -48,8 +54,7 @@ double Scheduler::calc_est_parents(const shared_ptr<Node> &node)
         const pair<int,int> key(sitem->get_id(),node->get_id());
         assert(edges.find(key) != edges.end());
         auto transload = edges[key];
-        auto transrate = get_comm_rate(sitem,node);
-        auto transtime = transrate == 0 ? 0 : transload / transrate;
+        auto transtime = get_comm_time(transload, sitem, node);
         auto cur_est = sitem->get_est() + sitem->get_processor()->process_time(sitem) + transtime;
         if(cur_est > max)
             max = cur_est;
@@ -92,8 +97,7 @@ double Scheduler::calc_lst_parents(const shared_ptr<Node> &node)
         const pair<int,int> key(node->get_id(),sitem->get_id());
         assert(edges.find(key) != edges.end());
         auto transload = edges[key];
-        auto transrate = get_comm_rate(sitem,node);
-        auto transtime = transrate == 0 ? 0 : transload / transrate;
+        auto transtime = get_comm_time(transload, sitem, node);
         auto cur_lst = sitem->get_lst() - cur_process_time - transtime;
         if(cur_lst < min)
             min = cur_lst;
