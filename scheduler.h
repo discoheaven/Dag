@@ -13,7 +13,7 @@ public:
     {
     }
     void set_schedule(const shared_ptr<Node> &node,const shared_ptr<Processor> &processor);
-    void set_schedule_at(const shared_ptr<Node> &node,const shared_ptr<Processor> &processor,int index);
+    void set_schedule_at(const shared_ptr<Node> &node,const shared_ptr<Processor> &processor,pair<int,int> index);
     void update();
     double calc_est(const shared_ptr<Node> &node);
     double calc_lst(const shared_ptr<Node> &node);

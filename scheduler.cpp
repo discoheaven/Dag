@@ -223,11 +223,11 @@ void Scheduler::update_lst()
 
 void Scheduler::set_schedule(const shared_ptr<Node> &node, const shared_ptr<Processor> &processor)
 {
-    int index = processor->get_tasks().size();
+    auto index = processor->get_avail_index();
     set_schedule_at(node,processor,index);
 }
 
-void Scheduler::set_schedule_at(const shared_ptr<Node> &node, const shared_ptr<Processor> &processor, int index)
+void Scheduler::set_schedule_at(const shared_ptr<Node> &node, const shared_ptr<Processor> &processor, pair<int,int> index)
 {
     if(node->is_scheduled())
     {

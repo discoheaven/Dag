@@ -26,8 +26,6 @@ void Greedy::assign(const shared_ptr<Node> &node, const vector<shared_ptr<Node>>
     for(auto &processor : processors)
     {
         auto index = processor->retrieve_index(end_dummy_node);
-        if(index == -1)
-            index = processor->get_task_size();
         scheduler.set_schedule_at(node,processor,index);
         auto node_est = scheduler.calc_est(node);
         if(node_est < min_est)

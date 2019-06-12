@@ -15,6 +15,7 @@
 using std::vector;
 using std::shared_ptr;
 using std::map;
+using std::pair;
 
 class Processor {
 public:
@@ -24,12 +25,12 @@ public:
         ClOUD
     };
     Processor(int id,double f ,TYPE t):processor_id_(id),frequency_(f),type(t){}
-    virtual void insert_at(const shared_ptr<Node> &node, int index) = 0;
-    virtual int retrieve_index(const shared_ptr<Node> &node) = 0;
+    virtual void insert_at(const shared_ptr<Node> &node, pair<int,int> index) = 0;
+    virtual pair<int,int> retrieve_index(const shared_ptr<Node> &node) = 0;
     virtual void erase(const shared_ptr<Node> &node) = 0;
     virtual shared_ptr<Node> get_prev_task(const shared_ptr<Node> &node) const = 0;
     virtual shared_ptr<Node> get_next_task(const shared_ptr<Node> &node) const = 0;
-    virtual vector<shared_ptr<Node>> get_tasks() const = 0;
+    virtual pair<int,int> get_avail_index() const = 0;
 
     virtual ~Processor() = default;
     double process_time(const shared_ptr<Node> &node){
@@ -53,7 +54,6 @@ public:
     bool isCloud() const{
         return type == ClOUD;
     }
-    virtual unsigned long get_task_size() const = 0;
     virtual void reset() = 0;
 
 private:
@@ -64,68 +64,63 @@ private:
 
 class User : public Processor {
 public:
-    User(int id,double f,TYPE t): Processor(id,f,t){}
+    User(int id,double f,TYPE t): Processor(id,f,t), tasks(1, vector<shared_ptr<Node>>()){}
 
-    void insert_at(const shared_ptr<Node> &node,int index) override
-    {
-        assert(index >= 0 && index <= tasks.size());
-        tasks.insert(tasks.begin()+index,node);
-    }
+    void insert_at(const shared_ptr<Node> &node,pair<int,int> index) override;
 
-    int retrieve_index(const shared_ptr<Node> &node) override
-    {
-        auto loc = std::find(tasks.begin(),tasks.end(),node);
-        if(loc == tasks.end())
-            return -1;
-        else
-            return loc - tasks.begin();
-    }
+    pair<int,int> retrieve_index(const shared_ptr<Node> &node) override;
 
-    void erase(const shared_ptr<Node> &node) override
-    {
-        auto loc = std::find(tasks.begin(),tasks.end(),node);
-        assert(loc != tasks.end());
-        tasks.erase(loc);
-    }
+    void erase(const shared_ptr<Node> &node) override;
 
     shared_ptr<Node> get_prev_task(const shared_ptr<Node> &node) const override;
     shared_ptr<Node> get_next_task(const shared_ptr<Node> &node) const override;
 
-    vector<shared_ptr<Node>> get_tasks() const override
+    pair<int,int> get_avail_index() const override
     {
-        return tasks;
+        return {0, tasks[0].size()};
     }
 
-    unsigned long get_task_size() const override{
-        return tasks.size();
-    }
-
-    void reset() override {
-        tasks.clear();
+    void reset() override
+    {
+        tasks[0].clear();
     }
 
 private:
-    vector<shared_ptr<Node>> tasks;
+    vector<vector<shared_ptr<Node>>> tasks;
 };
 
 class Mec : public Processor{
 public:
-    Mec(int id,double f ,TYPE t): Processor(id,f,t) {}
+    Mec(int id,double f ,TYPE t): Processor(id,f,t), tasks(mec_core_size, vector<shared_ptr<Node>>()) {}
 
+    void insert_at(const shared_ptr<Node> &node,pair<int,int> index) override;
+
+    pair<int,int> retrieve_index(const shared_ptr<Node> &node) override;
+
+    void erase(const shared_ptr<Node> &node) override;
+
+    shared_ptr<Node> get_prev_task(const shared_ptr<Node> &node) const override;
+
+    shared_ptr<Node> get_next_task(const shared_ptr<Node> &node) const override;
+
+    pair<int,int> get_avail_index() const override;
+
+    void reset() override;
+private:
+    vector<vector<shared_ptr<Node>>> tasks;
+    static const int mec_core_size = 4;
 };
 
 class Cloud : public Processor{
 public:
+
     Cloud(int id,double f,TYPE t): Processor(id,f,t){}
 
-    void insert_at(const shared_ptr<Node> &node,int index) override {}
+    void insert_at(const shared_ptr<Node> &node,pair<int,int> index) override;
 
-    int retrieve_index(const shared_ptr<Node> &node) override
-    {
-        return -1;
-    }
+    pair<int,int> retrieve_index(const shared_ptr<Node> &node) override;
 
-    void erase(const shared_ptr<Node> &node) override {}
+    void erase(const shared_ptr<Node> &node) override;
 
     shared_ptr<Node> get_prev_task(const shared_ptr<Node> &node) const override
     {
@@ -136,15 +131,16 @@ public:
         return nullptr;
     }
 
-    vector<shared_ptr<Node>> get_tasks() const override
+    pair<int,int> get_avail_index() const override
     {
-        return vector<shared_ptr<Node>>();
+        return {tasks.size(),0};
     }
 
-    unsigned long get_task_size() const override{
-        return 0;
+    void reset() override
+    {
+        tasks.clear();
     }
-
-    void reset() override {}
+private:
+    vector<vector<shared_ptr<Node>>> tasks;
 };
 #endif //MEC_PROCESSOR_H
