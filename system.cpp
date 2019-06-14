@@ -18,11 +18,11 @@ System::System()
     }
 
     for(;i < user_num + mec_num;++i) {
-        auto mec_sever = new Server(i, mec_freq, Processor::TYPE::MEC);
+        auto mec_sever = new Mec(i, mec_freq, Processor::TYPE::MEC);
         processors_.emplace_back(mec_sever);
     }
 
-    auto cloud_server = new Server(i, cloud_freq, Processor::TYPE::ClOUD);
+    auto cloud_server = new Cloud(i, cloud_freq, Processor::TYPE::ClOUD);
     processors_.emplace_back(cloud_server);
 
     dag_initial_processor_ = processors_.at(e_() % user_num);

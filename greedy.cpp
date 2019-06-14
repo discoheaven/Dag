@@ -22,7 +22,7 @@ void Greedy::assign(const shared_ptr<Node> &node, const vector<shared_ptr<Node>>
     auto end_dummy_node = nodes.back();
     double min_est = LONG_MAX; //fixme
     auto min_processor = node->get_processor();
-    auto min_index = -1;
+    pair<int,int> min_index = {-1,-1};
     for(auto &processor : processors)
     {
         auto index = processor->retrieve_index(end_dummy_node);

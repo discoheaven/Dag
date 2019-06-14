@@ -10,8 +10,12 @@ Solution::Solution(const Scheduler& sc)
     for(auto &item : sc.get_processors())
     {
         schedule.insert({item->get_id(),{}});
-        for(auto &task : item->get_tasks())
-            schedule[item->get_id()].push_back(task->get_id());
+        for(auto &task : item->get_all_tasks()) {
+            vector<int> tsks;
+            for(auto &tsk : task)
+                tsks.push_back(tsk->get_id());
+            schedule[item->get_id()].push_back(tsks);
+        }
     }
     calTime(sc);
     calCost(sc);
@@ -44,9 +48,14 @@ void Solution::print_solution() const
     cout << "**********************\n";
     for(auto &item : schedule)
     {
-        cout << "processor " << item.first << ": ";
-        for(auto &node : item.second)
-            cout << node << "(est:" << ests.at(node) << ") ";
+        cout << "processor " << item.first << ":\n";
+        for(int i = 0;i < item.second.size();++i)
+        {
+            cout << "core " << i << ": ";
+            for (auto &node : item.second[i])
+                cout << node << "(est:" << ests.at(node) << ") ";
+            cout << "\n";
+        }
         cout << endl;
     }
     cout << "**********************\n";

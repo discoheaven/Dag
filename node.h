@@ -13,6 +13,7 @@ class Processor;
 using std::weak_ptr;
 using std::vector;
 using std::shared_ptr;
+using std::pair;
 class Node{
 public:
     Node() = delete;
@@ -84,12 +85,15 @@ public:
         return is_scheduled_;
     }
 
-    virtual void set_processor(const shared_ptr<Processor> &processor);
+    virtual void set_processor(pair<const shared_ptr<Processor>,int> processor);
 
     shared_ptr<Processor> get_processor() const{
-        return processor_.lock();
+        return processor_.first.lock();
     }
 
+    int get_core() const{
+        return processor_.second;
+    }
 
     void dec_pcnt(){
         if(pcnt_ == 0)
@@ -158,7 +162,7 @@ protected:
     vector<weak_ptr<Node>> children_;
     vector<weak_ptr<Node>> all_fathers_;
     vector<weak_ptr<Node>> all_children_;
-    weak_ptr<Processor> processor_;
+    pair<weak_ptr<Processor>, int> processor_;
     double finish_time_;
     bool is_scheduled_;
     bool is_fixed_;

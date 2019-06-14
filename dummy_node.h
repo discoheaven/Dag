@@ -10,7 +10,7 @@ class DummyNode : public Node
 public:
     DummyNode(int id,double weight):Node(id,weight,true)
     {}
-    void set_processor(const shared_ptr<Processor> &processor) override;
+    void set_processor(pair<const shared_ptr<Processor>,int> processor) override;
 private:
 
 };

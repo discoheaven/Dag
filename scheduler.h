@@ -6,6 +6,7 @@
 #define MEC_SCHEDULER_H
 #include "dag.h"
 #include "system.h"
+
 class Scheduler {
 public:
     Scheduler(const Dag& dag, const System& sy): nodes(dag.get_nodes()),

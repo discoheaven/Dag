@@ -37,11 +37,11 @@ double Scheduler::get_comm_rate(const shared_ptr<Processor> &processor1, const s
     else if(processor1->get_type() == processor2->get_type())
         return 10 * CCR;
     else if((processor1->isUser() && processor2->isMEC()) || (processor1->isMEC() && processor2->isUser()))
-        return 2 * CCR;
+        return 8 * CCR;
     else if((processor1->isUser() && processor2->isCloud()) || (processor1->isCloud() && processor2->isUser()))
-        return 1 * CCR;
+        return 5 * CCR;
     else
-        return 3 * CCR;
+        return 5 * CCR;
 }
 
 double Scheduler::calc_est_parents(const shared_ptr<Node> &node)
@@ -231,12 +231,12 @@ void Scheduler::set_schedule_at(const shared_ptr<Node> &node, const shared_ptr<P
 {
     if(node->is_scheduled())
     {
-        if(node->is_fixed_processor())
-            return;
+        //if(node->is_fixed_processor())
+            //return;
         auto last_processor = node->get_processor();
         last_processor->erase(node);
     }
-    node->set_processor(processor);
+    node->set_processor({processor, index.first});
     processor->insert_at(node,index);
 }
 

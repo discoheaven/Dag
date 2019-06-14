@@ -3,7 +3,7 @@
 //
 int nodes_size = 100;
 int processors_size = 20;
-double CCR = 1000;
+double CCR = 3000;
 double deadline = 5;
 int frac_user_mec = 10;
-double cloud_delay = 0.02;
+double cloud_delay = 0.001;

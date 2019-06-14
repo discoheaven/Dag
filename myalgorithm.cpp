@@ -38,6 +38,7 @@ void MyAlgo::run(const Dag& dag, const System& sys, int rank)
     for(int io = 0;io < grasp_iteration;++io) {
         reset(dag, sys);
         initialize(dag, sys, scheduler, io % processors.size());
+
         vector<Solution> solution_set_inner;
         for (int i = 0; i < 30; ++i) {
             auto critical_path = find_critical_path(nodes);
@@ -94,50 +95,30 @@ void MyAlgo::migrate(const shared_ptr<Node> &node, const vector<shared_ptr<Node>
                       const vector<shared_ptr<Processor>> &processors, Scheduler& scheduler)
 {
     static MigrateMetric *migrate_metric = DefaultMigrateMetric::get_metric();
+    migrate_metric->initial(node);
+
     auto old_processor = node->get_processor();
     auto old_index = old_processor->retrieve_index(node);
-    assert(old_index != -1);
-    migrate_metric->initial(node);
+
     auto min_processor = old_processor;
-    auto min_index = -1;
+    pair<int,int> min_index{-1,-1};
+
     for(auto &new_processor : processors)
     {
-        if(new_processor == old_processor)
+        if(old_processor == new_processor)
             continue;
-        auto temp = new_processor->get_tasks();
-        unordered_map<shared_ptr<Node>,int> new_processor_tasks;
-        for(int i = 0;i < temp.size();++i)
-            new_processor_tasks.insert({temp[i],i});
-
-        int father_max = 0;
-        for(auto &item : node->get_all_fathers())
+        auto slots = get_avail_slots(new_processor,node);
+        for(auto &slot : slots)
         {
-            auto sitem = item.lock();
-            auto loc = new_processor_tasks.find(sitem);
-            if(loc != new_processor_tasks.end() && (loc->second + 1) > father_max)
-                father_max = loc->second + 1;
-        }
-
-        auto child_min = static_cast<int>(temp.size());
-        for(auto &item : node->get_all_children())
-        {
-            auto sitem = item.lock();
-            auto loc = new_processor_tasks.find(sitem);
-            if(loc != new_processor_tasks.end() && loc->second < child_min)
-                child_min = loc->second;
-        }
-
-        assert(father_max <= child_min);
-
-        scheduler.set_schedule_at(node,new_processor,child_min);
-        scheduler.update();
-        if(migrate_metric->better(node,scheduler))
-        {
-            min_processor = new_processor;
-            min_index = child_min;
+            scheduler.set_schedule_at(node, new_processor, slot);
+            scheduler.update();
+            if (migrate_metric->better(node, scheduler)) {
+                min_processor = new_processor;
+                min_index = slot;
+            }
         }
     }
-    if(min_index == -1)
+    if(min_index == pair<int,int>{-1,-1})
         scheduler.set_schedule_at(node,old_processor,old_index);
     else
         scheduler.set_schedule_at(node,min_processor,min_index);
@@ -153,4 +134,41 @@ void MyAlgo::reset(const Dag &dag, const System &sys)
     {
         item->reset();
     }
+}
+
+vector<pair<int,int>> MyAlgo::get_avail_slots(const shared_ptr<Processor> &processor, const shared_ptr<Node>& node)
+{
+    if(processor->isCloud())
+        return {processor->get_avail_index()};
+
+    vector<pair<int,int>> res;
+
+    int core_size = processor->get_core_size();
+
+    for(int core = 0;core < core_size;++core)
+    {
+        int father_max = -1;
+        for (auto &item : node->get_all_fathers()) {
+            auto sitem = item.lock();
+            auto index = processor->get_node_index(sitem, core);
+            if (index != -1 && index > father_max)
+                father_max = index;
+        }
+
+        auto child_min = static_cast<int>(processor->get_core_tasks_size(core));
+        for (auto &item : node->get_all_children()) {
+            auto sitem = item.lock();
+            auto index = processor->get_node_index(sitem, core);
+            if (index != -1 && index < child_min)
+                child_min = index;
+        }
+
+        assert(father_max < child_min);
+
+        for(int index = father_max;index<child_min;++index)
+        {
+            res.emplace_back(core, index + 1);
+        }
+    }
+    return res;
 }

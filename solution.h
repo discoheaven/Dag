@@ -32,7 +32,7 @@ private:
     {
         return node->get_workload() / node->get_processor()->get_freq();
     }
-    map<int,vector<int>> schedule;
+    map<int,vector<vector<int>>> schedule;
     map<int,double> ests;
     double time;
     double e_cost;
