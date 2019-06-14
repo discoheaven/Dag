@@ -39,9 +39,9 @@ double Scheduler::get_comm_rate(const shared_ptr<Processor> &processor1, const s
     else if((processor1->isUser() && processor2->isMEC()) || (processor1->isMEC() && processor2->isUser()))
         return 8 * CCR;
     else if((processor1->isUser() && processor2->isCloud()) || (processor1->isCloud() && processor2->isUser()))
-        return 5 * CCR;
+        return 4 * CCR;
     else
-        return 5 * CCR;
+        return 4 * CCR;
 }
 
 double Scheduler::calc_est_parents(const shared_ptr<Node> &node)

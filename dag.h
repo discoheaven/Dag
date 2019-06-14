@@ -19,13 +19,9 @@ class Dag {
 public:
     enum Dag_Selector
     {
-        DAG1,
-        DAG2,
-        DAG3,
-        DAG4,
-        DAG5,
-        DAG6,
-        RANDOM_DAG
+        RANDOM_DAG,
+        WORKFLOW_DAG,
+        TREE_DAG
     };
     explicit Dag(Dag_Selector s = RANDOM_DAG);
     vector<shared_ptr<Node>> get_nodes() const{
@@ -36,13 +32,9 @@ public:
     }
     void print_dag() const;
 private:
-    void dag1_generator();
-    void dag2_generator();
-    void dag3_generator();
-    void dag4_generator();
-    void dag5_generator();
-    void dag6_generator();
     void random_dag_generator();
+    void workflow_dag_generator();
+    void tree_dag_generator();
     void set_all_children_fathers();
     Dag_Selector selector;
     vector<shared_ptr<Node>> nodes;

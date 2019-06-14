@@ -11,7 +11,7 @@ class DefaultMigrateMetric{
 public:
     static MigrateMetric* get_metric()
     {
-        return new MinBESTMigrateMetric();
+        return new MaxMobilityMigrateMetric();
     }
 };
 #endif //MEC_DEFAULTMIGRATEMETRIC_H
