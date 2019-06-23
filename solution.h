@@ -23,6 +23,7 @@ public:
     void print() const
     {
         cout << "Time Cost: " << time << "\n" << "Energy Cost: " << e_cost << endl;
+        cout << "**********" << endl;
     }
     void print_solution() const;
 private:

@@ -8,186 +8,181 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/lwd/桌面/Dag/cmake-build-debug"/>
+				<Option working_dir="/Users/liuweidong/Desktop/Dag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/lwd/桌面/Dag/cmake-build-debug"/>
+				<Option working_dir="/Users/liuweidong/Desktop/Dag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/lwd/桌面/Dag/cmake-build-debug"/>
+				<Option working_dir="/Users/liuweidong/Desktop/Dag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mec">
-				<Option output="/home/lwd/桌面/Dag/cmake-build-debug/mec" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lwd/桌面/Dag/cmake-build-debug"/>
+				<Option output="/Users/liuweidong/Desktop/Dag/cmake-build-debug/mec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liuweidong/Desktop/Dag/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="."/>
-					<Add directory="/home/lwd/下载/build/release-install-cpp11/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mec/fast">
-				<Option output="/home/lwd/桌面/Dag/cmake-build-debug/mec" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lwd/桌面/Dag/cmake-build-debug"/>
+				<Option output="/Users/liuweidong/Desktop/Dag/cmake-build-debug/mec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liuweidong/Desktop/Dag/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="."/>
-					<Add directory="/home/lwd/下载/build/release-install-cpp11/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lwd/桌面/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 mec/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liuweidong/Desktop/Dag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lwd/桌面/Dag/DefaultMigrateMetric.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/DefaultMigrateMetric.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/DefaultNodeSelection.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/DefaultNodeSelection.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MaxMobilityMigrateMetric.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MaxMobilityMigrateMetric.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MaxMobilityMigrateMetric.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MaxMobilityMigrateMetric.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MigrateMetric.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MigrateMetric.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MinBESTMigrateMetric.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MinBESTMigrateMetric.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MinBESTMigratePolicy.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MinBESTMigratePolicy.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MinEstMigrateMetric.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MinEstMigrateMetric.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/MinEstMigrateMetric.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/MinEstMigrateMetric.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/NodeSelectionPolicy.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/NodeSelectionPolicy.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/RandomNodeSelection.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/RandomNodeSelection.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/common.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/common.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/common.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/common.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/dag.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/dag.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/dag.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/dag.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/dummy_node.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/dummy_node.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/dummy_node.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/dummy_node.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/greedy.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/greedy.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/greedy.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/greedy.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/main.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/main.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/myalgorithm.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/myalgorithm.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/myalgorithm.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/myalgorithm.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/myalgorithm_tabu.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/myalgorithm_tabu.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/node.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/myalgorithm_tabu.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/node.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/node.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/processor.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/node.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/processor.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/processor.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/scheduler.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/processor.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/scheduler.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/scheduler.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/solution.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/scheduler.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/solution.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/solution.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/system.cpp">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/solution.h">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/system.h">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/system.cpp">
 			<Option target="mec"/>
 		</Unit>
-		<Unit filename="/home/lwd/桌面/Dag/CMakeLists.txt">
+		<Unit filename="/Users/liuweidong/Desktop/Dag/system.h">
+			<Option target="mec"/>
+		</Unit>
+		<Unit filename="/Users/liuweidong/Desktop/Dag/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

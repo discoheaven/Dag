@@ -26,7 +26,7 @@ System::System()
     processors_.emplace_back(cloud_server);
 
     dag_initial_processor_ = processors_.at(e_() % user_num);
-    cout << "\nThe initial Processor with the whole DAG is Processor " << dag_initial_processor_->get_id() << "!\n" << endl;
+    //cout << "\nThe initial Processor with the whole DAG is Processor " << dag_initial_processor_->get_id() << "!\n" << endl;
 }
 
 shared_ptr<Processor> System::get_random_processor()

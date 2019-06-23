@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mec.dir/MaxMobilityMigrateMetric.cpp.o"
   "CMakeFiles/mec.dir/MinBESTMigrateMetric.cpp.o"
   "CMakeFiles/mec.dir/common.cpp.o"
+  "CMakeFiles/mec.dir/myalgorithm_tabu.cpp.o"
   "mec.pdb"
   "mec"
 )

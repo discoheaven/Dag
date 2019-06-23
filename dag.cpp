@@ -139,7 +139,7 @@ void Dag::random_dag_generator()
         edges.insert({{item->get_id(),end_dummy_node->get_id()},ue(e)});
     }
 
-    cout << "random dag generation done!\n" << endl;
+    //cout << "random dag generation done!\n" << endl;
 
 }
 
@@ -226,7 +226,7 @@ void Dag::workflow_dag_generator()
         end_dummy_node->InsertFather(last_node);
         edges.insert({{last_node->get_id(),end_dummy_node->get_id()},ue(e)});
     }
-    cout << "workflow dag generation done!\n" << endl;
+    //cout << "workflow dag generation done!\n" << endl;
 }
 
 void Dag::tree_dag_generator()
@@ -280,7 +280,7 @@ void Dag::tree_dag_generator()
         end_dummy_node->InsertFather(item);
         edges.insert({{item->get_id(), end_dummy_node->get_id()},ue(e)});
     }
-    cout << "tree dag generation done!\n" << endl;
+    //cout << "tree dag generation done!\n" << endl;
 }
 
 void helper_father(const shared_ptr<Node>& node,const shared_ptr<Node>& cur_node,set<shared_ptr<Node>>& st)

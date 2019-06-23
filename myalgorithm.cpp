@@ -25,7 +25,7 @@ void MyAlgo::initialize(const Dag &dag, const System &sys, Scheduler &scheduler,
     Solution initial_solution(scheduler);
     cout << "Initial Solution:\n";
     initial_solution.print();
-    initial_solution.print_solution();
+    //initial_solution.print_solution();
 }
 void MyAlgo::run(const Dag& dag, const System& sys, int rank)
 {
@@ -62,7 +62,7 @@ void MyAlgo::run(const Dag& dag, const System& sys, int rank)
                                                   return a.get_time() < b.get_time();
                                               });
         best_solution.print();
-        best_solution.print_solution();
+        //best_solution.print_solution();
         solution_set_outer.push_back(best_solution);
     }
     Solution best_solution = *min_element(solution_set_outer.begin(), solution_set_outer.end(),
